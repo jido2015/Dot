@@ -4,6 +4,7 @@
     package="com.olajide.dot">
 
     <application
+        android:name=".core.DotBaseApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
