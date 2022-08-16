@@ -1,12 +1,16 @@
 package com.olajide.dot.core.hilt
 
-import com.olajide.dot.core.DispatchProvider
+import com.olajide.dot.core.provideGenericApiService
+import com.olajide.dot.core.retrofit.DotApiService
+import com.olajide.dot.core.retrofit.qualifiers.InterceptorOkHttpClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import okhttp3.OkHttpClient
+import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 /**
@@ -17,6 +21,23 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+
+    @InterceptorOkHttpClient
+    @Singleton
+    @Provides
+    fun provideHttpClient(
+    ): OkHttpClient {
+        return OkHttpClient.Builder()
+            .readTimeout(60, TimeUnit.SECONDS)
+            .connectTimeout(60, TimeUnit.SECONDS)
+            .build()
+    }
+    @Singleton
+    @Provides
+    fun provideTrnxApiService(@InterceptorOkHttpClient okHttpClient: OkHttpClient): DotApiService =
+        provideGenericApiService(okHttpClient)
+}
+
 
     //Dispatchers - Use this dispatcher to run a coroutine on the main or background Android thread.
     @Singleton
@@ -31,5 +52,3 @@ object AppModule {
         override val unconfined: CoroutineDispatcher
             get() = Dispatchers.Unconfined
     }
-
-}
