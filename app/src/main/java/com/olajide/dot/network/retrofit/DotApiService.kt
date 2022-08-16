@@ -1,4 +1,4 @@
-package com.olajide.dot.core.retrofit
+package com.olajide.dot.network.retrofit
 
 import com.olajide.dot.list.data.Product
 import retrofit2.Response

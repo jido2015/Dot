@@ -1,8 +1,8 @@
 package com.olajide.dot.core.hilt
 
-import com.olajide.dot.core.provideGenericApiService
-import com.olajide.dot.core.retrofit.DotApiService
-import com.olajide.dot.core.retrofit.qualifiers.InterceptorOkHttpClient
+import com.olajide.dot.network.retrofit.provideGenericApiService
+import com.olajide.dot.network.retrofit.DotApiService
+import com.olajide.dot.network.retrofit.qualifiers.InterceptorOkHttpClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -34,7 +34,7 @@ object AppModule {
     }
     @Singleton
     @Provides
-    fun provideTrnxApiService(@InterceptorOkHttpClient okHttpClient: OkHttpClient): DotApiService =
+    fun provideDotApiService(@InterceptorOkHttpClient okHttpClient: OkHttpClient): DotApiService =
         provideGenericApiService(okHttpClient)
 }
 

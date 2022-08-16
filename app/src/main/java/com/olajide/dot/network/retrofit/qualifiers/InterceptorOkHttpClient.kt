@@ -1,4 +1,4 @@
-package com.olajide.dot.core.retrofit.qualifiers
+package com.olajide.dot.network.retrofit.qualifiers
 
 import javax.inject.Qualifier
 

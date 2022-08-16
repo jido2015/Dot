@@ -1,6 +1,6 @@
-package com.olajide.dot.core
+package com.olajide.dot.network.retrofit
 
-import com.olajide.dot.core.Constants.BASE_URL
+import com.olajide.dot.network.Constants.BASE_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

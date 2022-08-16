@@ -1,4 +1,4 @@
-package com.olajide.dot.core
+package com.olajide.dot.network
 
 object
 Constants {
