@@ -14,7 +14,7 @@ sealed class NetworkResult<T>(
 
     override fun toString(): String {
         return when (this) {
-            is Success<*> -> "Success[verifyCustomerData=$data]"
+            is Success<*> -> "Success[Data=$data]"
             is Failure -> "Error[Error=$errorText]"
             is Empty -> "Empty--"
             is Loading -> "Loading----"

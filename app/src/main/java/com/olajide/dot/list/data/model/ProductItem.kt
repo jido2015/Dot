@@ -1,4 +1,4 @@
-package com.olajide.dot.list.data
+package com.olajide.dot.list.data.model
 
 data class ProductItem(
     val api_featured_image: String,
