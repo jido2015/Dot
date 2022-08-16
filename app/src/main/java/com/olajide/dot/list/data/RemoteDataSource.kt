@@ -8,7 +8,7 @@ import timber.log.Timber
 import javax.inject.Inject
 
 //Data source interacts with repository to call data from remote api and local database.
-class DataSource @Inject constructor(private val api: DotApiService): Repository {
+class RemoteDataSource @Inject constructor(private val api: DotApiService): Repository {
     override suspend fun onProductReceived(): NetworkResult<Product> {
         return try {
             val response = api.getProducts()
