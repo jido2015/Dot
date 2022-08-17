@@ -20,8 +20,9 @@ class RemoteDataSource @Inject constructor(private val api: DotApiService): Repo
             if (response.isSuccessful && result != null) {
                 NetworkResult.Success(result)
             }else {
+                val error = response.message()
                 Timber.d("ApiError $response")
-                NetworkResult.Failure(response.toString())
+                NetworkResult.Failure(error.toString())
             }
         } catch (e: Exception) {
             Timber.d("ApiError $e")

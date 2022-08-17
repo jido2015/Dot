@@ -6,7 +6,9 @@
         <entry key="app/src/main/res/drawable-v24/circle.xml" value="0.2065" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2587890625" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1357214934409687" />
+        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.1357214934409687" />
+        <entry key="app/src/main/res/layout/fragment_list.xml" value="0.1357214934409687" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1357214934409687" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.335" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.25421686746987954" />
@@ -18,5 +20,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.13521695257315844" />
+      </ProjectState>
+    </option>
   </component>
 </project>

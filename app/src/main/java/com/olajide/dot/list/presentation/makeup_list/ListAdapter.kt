@@ -1,4 +1,4 @@
-package com.olajide.dot.list.presentation
+package com.olajide.dot.list.presentation.makeup_list
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -58,7 +58,7 @@ class ListAdapter(private val prod: List<ProductItem>, val context: Context) : R
         return View.OnClickListener {
 
             val directions =
-                ListFragmentDirections.actionFirstFragmentToSecondFragment(product)
+                MakeupListFragmentDirections.toMakeupDetailFragment(product)
             it.findNavController().navigate(directions)
         }
     }

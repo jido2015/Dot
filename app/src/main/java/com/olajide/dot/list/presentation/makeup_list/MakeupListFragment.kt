@@ -1,4 +1,4 @@
-package com.olajide.dot.list.presentation
+package com.olajide.dot.list.presentation.makeup_list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,7 +19,7 @@ import timber.log.Timber
  */
 
 @AndroidEntryPoint
-class ListFragment : Fragment() {
+class MakeupListFragment : Fragment() {
 
     private var _binding: FragmentListBinding? = null
     private val viewModel: ProductViewModel by activityViewModels()
@@ -48,11 +48,13 @@ class ListFragment : Fragment() {
         //Attach adapter to RecyclerView
         binding.recycler.adapter = adapter
 
+        //Get Latest u
         viewModel.getProductList()
         handleProductResponse()
 
     }
 
+    //Get Latest update when APi response changes
     private fun handleProductResponse() {
 
         if(products.size < 1){

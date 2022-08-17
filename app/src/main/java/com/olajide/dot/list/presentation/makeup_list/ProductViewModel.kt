@@ -1,4 +1,4 @@
-package com.olajide.dot.list.presentation
+package com.olajide.dot.list.presentation.makeup_list
 
 import androidx.lifecycle.ViewModel
 import com.olajide.dot.extension.launchIo
