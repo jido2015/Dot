@@ -11,17 +11,20 @@ import javax.inject.Inject
 class RemoteDataSource @Inject constructor(private val api: DotApiService): Repository {
     override suspend fun onProductReceived(): NetworkResult<Product> {
         return try {
+
+            Timber.d("Reached Datasource")
+
             val response = api.getProducts()
 
             val result = response.body()
             if (response.isSuccessful && result != null) {
                 NetworkResult.Success(result)
             }else {
-                val errorMessage =  response.toString()
-                Timber.d(errorMessage)
-                NetworkResult.Failure(errorMessage)
+                Timber.d("ApiError $response")
+                NetworkResult.Failure(response.toString())
             }
         } catch (e: Exception) {
+            Timber.d("ApiError $e")
             NetworkResult.Exception(e.message ?: "An error occurred")
         }
     }
