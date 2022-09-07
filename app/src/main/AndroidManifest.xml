@@ -19,7 +19,7 @@
         android:theme="@style/Theme.Dot"
         tools:targetApi="31">
         <activity
-            android:name=".list.presentation.MainActivity"
+            android:name=".product.presentation.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Dot.NoActionBar"
             android:label="@string/app_name">

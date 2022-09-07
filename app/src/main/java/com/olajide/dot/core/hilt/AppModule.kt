@@ -1,9 +1,9 @@
 package com.olajide.dot.core.hilt
 
-import com.olajide.dot.list.data.RemoteDataSource
-import com.olajide.dot.list.domain.Repository
-import com.olajide.dot.list.domain.usecase.implementation.ProductInteractionImpl
-import com.olajide.dot.list.domain.usecase.interaction.ProductInteraction
+import com.olajide.dot.product.data.RemoteDataSource
+import com.olajide.dot.product.domain.Repository
+import com.olajide.dot.product.domain.usecase.implementation.ProductInteractionImpl
+import com.olajide.dot.product.domain.usecase.interaction.ProductInteraction
 import com.olajide.dot.network.retrofit.provideGenericApiService
 import com.olajide.dot.network.retrofit.DotApiService
 import com.olajide.dot.network.retrofit.qualifiers.InterceptorOkHttpClient

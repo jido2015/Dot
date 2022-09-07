@@ -1,6 +1,6 @@
-package com.olajide.dot.list.domain.usecase.interaction
+package com.olajide.dot.product.domain.usecase.interaction
 
-import com.olajide.dot.list.domain.usecase.GetProductUseCase
+import com.olajide.dot.product.domain.usecase.GetProductUseCase
 
 /**
  * An interaction interface to return provide  access

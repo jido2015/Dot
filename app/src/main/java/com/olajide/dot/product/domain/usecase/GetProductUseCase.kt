@@ -1,6 +1,6 @@
-package com.olajide.dot.list.domain.usecase
+package com.olajide.dot.product.domain.usecase
 
-import com.olajide.dot.list.domain.Repository
+import com.olajide.dot.product.domain.Repository
 import javax.inject.Inject
 
 class GetProductUseCase @Inject constructor (private val repository: Repository){

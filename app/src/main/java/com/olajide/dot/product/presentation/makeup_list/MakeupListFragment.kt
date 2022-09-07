@@ -1,4 +1,4 @@
-package com.olajide.dot.list.presentation.makeup_list
+package com.olajide.dot.product.presentation.makeup_list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.olajide.dot.databinding.FragmentListBinding
 import com.olajide.dot.extension.collectLatestLifecycleFlow
-import com.olajide.dot.list.data.model.ProductItem
+import com.olajide.dot.product.data.model.ProductItem
 import com.olajide.dot.network.NetworkResult
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber

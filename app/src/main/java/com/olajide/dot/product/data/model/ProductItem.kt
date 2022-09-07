@@ -1,4 +1,4 @@
-package com.olajide.dot.list.data.model
+package com.olajide.dot.product.data.model
 
 import java.io.Serializable
 

@@ -1,4 +1,4 @@
-package com.olajide.dot.list.data.model
+package com.olajide.dot.product.data.model
 
 data class ProductColor(
     val colour_name: String,

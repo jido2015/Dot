@@ -1,4 +1,4 @@
-package com.olajide.dot.list.presentation.makeup_list
+package com.olajide.dot.product.presentation.makeup_list
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.olajide.dot.databinding.ListItemBinding
-import com.olajide.dot.list.data.model.ProductItem
+import com.olajide.dot.product.data.model.ProductItem
 
 
 class ListAdapter(private val prod: List<ProductItem>, val context: Context) : RecyclerView.Adapter<ListAdapter.ViewHolder>()  {

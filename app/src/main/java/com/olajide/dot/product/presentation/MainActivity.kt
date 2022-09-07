@@ -1,4 +1,4 @@
-package com.olajide.dot.list.presentation
+package com.olajide.dot.product.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

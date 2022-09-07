@@ -1,7 +1,7 @@
-package com.olajide.dot.list.data
+package com.olajide.dot.product.data
 
-import com.olajide.dot.list.data.model.Product
-import com.olajide.dot.list.domain.Repository
+import com.olajide.dot.product.data.model.Product
+import com.olajide.dot.product.domain.Repository
 import com.olajide.dot.network.NetworkResult
 import com.olajide.dot.network.retrofit.DotApiService
 import timber.log.Timber

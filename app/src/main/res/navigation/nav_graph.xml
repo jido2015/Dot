@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/MakeupListFragment"
-        android:name="com.olajide.dot.list.presentation.makeup_list.MakeupListFragment"
+        android:name="com.olajide.dot.product.presentation.makeup_list.MakeupListFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_list">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/MakeupDetailFragment"
-        android:name="com.olajide.dot.list.presentation.MakeupDetailFragment"
+        android:name="com.olajide.dot.product.presentation.MakeupDetailFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_details">
         <argument
