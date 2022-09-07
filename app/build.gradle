@@ -72,6 +72,29 @@ dependencies {
     //Junit Test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    
+    // Espresso
+    def androidx_test_espresso = '3.4.0'
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidx_test_espresso"
+    implementation "androidx.test.espresso:espresso-idling-resource:$androidx_test_espresso"
+
+
+    // Mockk.io
+    def mockk_version = '3.10.0'
+    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
+    // google truth library for testing
+    testImplementation "com.google.truth:truth:1.1.3"
+    androidTestImplementation "com.google.truth:truth:1.1.3"
+
+    // testing coroutines and flows
+    testImplementation 'app.cash.turbine:turbine:0.7.0'
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2"
+
+    testImplementation 'org.mockito:mockito-inline:3.10.0'
+    testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
+    testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
+
 
     //Apache String Builder
     implementation 'org.apache.commons:commons-lang3:3.12.0'
