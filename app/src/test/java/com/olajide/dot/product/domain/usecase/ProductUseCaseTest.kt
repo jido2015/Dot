@@ -2,6 +2,7 @@ package com.olajide.dot.product.domain.usecase
 
 import com.olajide.dot.network.NetworkResult
 import com.olajide.dot.product.domain.repository.FakeRepository
+import com.olajide.dot.product.domain.test_generator.TestDataGenerator
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Before
@@ -26,7 +27,9 @@ class ProductUseCaseTest {
         fakeRepository.shouldReturnError(true)
 
         runBlocking {
-            Mockito.`when`(prodictUsecase.invoke()).thenReturn(NetworkResult.Success(""))
+            Mockito.`when`(prodictUsecase.invoke()).thenReturn(NetworkResult.Success(
+                TestDataGenerator.getProduct()
+            ))
             
             val expected = fakeRepository.onProductReceived()
             
